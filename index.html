@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<title>Hello, world!</title>
+</head>
+
+<body>
+
+	<div class="container pt-5">
+
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Nom du champ</span>
+			</div>
+			<input type="text" class="form-control oldVal" aria-label="Amount (to the nearest dollar)">
+			<div class="input-group-append">
+				<button class="btn btn-outline-secondary button-addon2" type="button" id="button-addon2"
+					data-toggle="modal" data-target="#coulcoulette">Button</button>
+			</div>
+		</div>
+		<div class="input-group mb-3">
+			<div class="input-group-prepend">
+				<span class="input-group-text">Nom du champ</span>
+			</div>
+			<input type="text" class="form-control oldVal" aria-label="Amount (to the nearest dollar)">
+			<div class="input-group-append">
+				<button class="btn btn-outline-secondary button-addon2" type="button" id="button-addon1"
+					data-toggle="modal" data-target="#coulcoulette">Button</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="modal fade" id="coulcoulette" tabindex="-1" role="dialog" aria-labelledby="coulcouletteTitle"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Coulcoulette</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<input type="text" class="form-control mb-3 myChampsCalc">
+					<div class="row justify-content-around mb-2">
+						<button class="col-2 btn btn-dark val" value="C">C</button>
+						<button class="col-2 btn btn-dark val" value="( )">( )</button>
+						<button class="col-2 btn btn-dark val" value="%">%</button>
+						<button class="col-2 btn btn-dark val" value="/">/</button>
+					</div>
+					<div class="row justify-content-around mb-2">
+						<button class="col-2 btn btn-dark val" value="7">7</button>
+						<button class="col-2 btn btn-dark val" value="8">8</button>
+						<button class="col-2 btn btn-dark val" value="9">9</button>
+						<button class="col-2 btn btn-dark val" value="*">*</button>
+					</div>
+					<div class="row justify-content-around mb-2">
+						<button class="col-2 btn btn-dark val" value="4">4</button>
+						<button class="col-2 btn btn-dark val" value="5">5</button>
+						<button class="col-2 btn btn-dark val" value="6">6</button>
+						<button class="col-2 btn btn-dark val" value="-">-</button>
+					</div>
+					<div class="row justify-content-around mb-2">
+						<button class="col-2 btn btn-dark val" value="1">1</button>
+						<button class="col-2 btn btn-dark val" value="2">2</button>
+						<button class="col-2 btn btn-dark val" value="3">3</button>
+						<button class="col-2 btn btn-dark val" value="+">+</button>
+					</div>
+					<div class="row justify-content-around mb-2">
+						<button class="col-2 btn btn-dark val" value=""> </button>
+						<button class="col-2 btn btn-dark val" value="0">0</button>
+						<button class="col-2 btn btn-dark val" value=".">,</button>
+						<button class="col-2 btn btn-dark totaux" value="=">=</button>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success replace">Rajouter</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+	</script>
+	<script src="script.js"></script>
+</body>
+
+</html>
