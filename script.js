@@ -13,15 +13,14 @@ $(document).ready(function () {
 		$(".myChampsCalc").val('');
 	}
 
-	const replace = (val) => {
-
-	}
-
 	$('.button-addon2').click(function () 
 	{
 		let val = $(this).parent().parent().children('.oldVal').val();
+		
+		let numModif = val.replace("," , ".");
+		let numModif2 = numModif.replace(" ", "");
 		$(this).parent().parent().children('.oldVal').addClass('calculetteOn');
-		$(".myChampsCalc").val(val);
+		$(".myChampsCalc").val(numModif2);
 		
 		
 		
